@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Ashish Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="photo">
+                <img src="ashish.jpeg" alt="Ashish Kumar">
+            </div>
+            <div class="description">
+                <h1>Ashish Kumar</h1>
+                <p>Haryana, India</p>
+                <p>P: +91 9812072494</p>
+                <p>Email: <a href="mailto:ashish.14spt@gmail.com">ashish.14spt@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/ashish1409">linkedin.com/in/ashish1409</a></p>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="fixed-button">
+                <button id="toggle-all" onclick="toggleAllSections()">Expand All</button>
+            </div>
+            <div class="scrollable-content">
+                <section>
+                    <div class="card">
+                        <div class="card-header" onclick="toggleSection('experience-details')">
+                            <h3>Experience</h3>
+                        </div>
+                        <div class="card-content" id="experience-details">
+                            <h4>Amazon, Gurugram, India</h4>
+                            <h5>Software Development Engineer (Jan 2021 – Dec 2023)</h5>
+                            <ul>
+                                <li>Worked on high-traffic, low-latency systems, driving impactful projects, scaling systems during peak seasons, ensuring operational excellence, and resolving customer issues while collaborating with multiple global teams.</li>
+                                <li><strong>Differential Instant Bank Discount on Specific EMI Tenures</strong><br><i><b><span style="font-size: smaller;color:#bc5a7e ">Java, Spring, JUnit, AWS (DynamoDB, IAM, Secret Manager, SQS, SNS), Scala, React, Typescript, HLD, LLD</span></b></i><br>Led the design and implementation of an industry-first project to offer differential instant discounts based on EMI tenures. Collaborated with multiple teams and led 3 SDEs to deliver within timelines, driving a 55% increase in discount attach rates. Scaled system infrastructure to handle 100% increased API traffic and created a real-time dashboard for system performance metrics.</li>
+                                <li><strong>Discount Voucher Cloning</strong><br><i><b><span style="font-size: smaller;color:#bc5a7e ">React, Typescript</span></b></i><br>Developed a React-based UI to auto-fill fields in the voucher creation form by uploading existing discount vouchers, allowing only necessary edits. This streamlined the process and reduced voucher creation time by 50%.</li>
+                                <li><strong>AWS X-Ray Implementation for Performance Optimization</strong><br><i><b><span style="font-size: smaller;color:#bc5a7e ">Java, Spring, JUnit, Mockito, AWS XRay, Git</span></b></i><br>Implemented AWS X-Ray to trace service calls and latency across code segments. Identified and resolved DynamoDB latency issues, achieving a 90% reduction in overall latency and ensuring SLA compliance.</li>
+                                <li><strong>Dynamic Configuration Management with Automated Deployment</strong><br><i><b><span style="font-size: smaller;color:#bc5a7e ">Java, Google Guava, JUnit, AWS AppConfig, CI/CD pipeline</span></b></i><br>Built a configuration management service with create/modify/delete support for streamlined updates. Automated configuration uploads with a CI/CD pipeline, reducing deployment time by 90%.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" onclick="toggleSection('projects-details')">
+                            <h3>Projects</h3>
+                        </div>
+                        <div class="card-content" id="projects-details">
+                            <p><strong>Real time ISS location Mapping</strong><br><i><b><span style="font-size: smaller;color:#bc5a7e">Python, Turtle</span></b></i><br>Developed a Python service to fetch and map the real-time ISS location using NASA APIs on turtle UI window.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" onclick="toggleSection('skills-details')">
+                            <h3>Skills</h3>
+                        </div>
+                        <div class="card-content" id="skills-details">
+                            <p>Programming Languages: Java, Scala, Python, TypeScript, SQL, HTML, CSS</p>
+                            <p>Frameworks/Tools: Spring, MySQL, JUnit, Mockito, React, Google Guava, Lombok, Unix,Maven, REST API, Eclipse, Git</p>
+                            <p>Cloud/DevOps: AWS (DynamoDB, IAM, SecretManager, SQS, SNS, X-Ray, AppConfig, Lambda, EC2, ECS), CI/CD, Docker</p>
+                            <p>Other: Data Structures, Algorithms, OOPS, Distributed Systems, Microservices, High Level / Low Level Design</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" onclick="toggleSection('education-details')">
+                            <h3>Education</h3>
+                        </div>
+                        <div class="card-content" id="education-details">
+                            <p>PANJAB UNIVERSITY, CHANDIGARH<br>Bachelor of Engineering in Information Technology (July 2021)<br>7.73 CGPA</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" onclick="toggleSection('achievements-details')">
+                            <h3>Achievements</h3>
+                        </div>
+                        <div class="card-content" id="achievements-details">
+                            <ul>
+                                <li>Awarded an official appreciation letter for successfully delivering a scalable configuration management service during the internship.</li>
+                                <li>Won the Developer of the Month Award (Amazon Pay IN) for designing and implementing a high-impact Differential Discount System, increasing attach rates by 50%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
